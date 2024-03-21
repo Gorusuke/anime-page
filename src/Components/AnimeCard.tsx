@@ -11,6 +11,7 @@ const AnimeCard = ({ anime }: AnimeInterface) => {
           alt={anime.name}
           fill
           sizes="100%"
+          className={styles.animeImage}
         />
       </div>
       <div className={styles.animeInfoContainer}>
@@ -21,7 +22,7 @@ const AnimeCard = ({ anime }: AnimeInterface) => {
         <div className={styles.animeDetails}>
           <div className={styles.animeEpisodes}>
             <Image
-              src="./play.svg"
+              src="/play.svg"
               alt="episodes"
               width={20}
               height={20}
@@ -30,7 +31,7 @@ const AnimeCard = ({ anime }: AnimeInterface) => {
           </div>
           <div className={styles.animeRating}>
             <Image
-              src="./star.svg"
+              src="/star.svg"
               alt="star"
               width={18}
               height={18}
